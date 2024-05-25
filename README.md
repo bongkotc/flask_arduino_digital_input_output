@@ -1,5 +1,5 @@
 # Flask Arduino Digital Input/Output
-<img src="flask_web.png" alt="My Image" width="500" height="500">
+<img src="images/flask_web.png" alt="My Image" width="500" height="300">
 
 # Wiring
 
