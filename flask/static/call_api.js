@@ -5,7 +5,6 @@ $(document).ready(function() {
             type: 'POST',
             data: {'data':1},
             success: function(response) {
-                //$('#response').html('<p>' + response.message + '</p>');
             },
             error: function(error) {
                 console.log('Error:', error);
@@ -18,7 +17,6 @@ $(document).ready(function() {
             type: 'POST',
             data: {'data':0},
             success: function(response) {
-                //$('#response').html('<p>' + response.message + '</p>');
             },
             error: function(error) {
                 console.log('Error:', error);
@@ -30,7 +28,6 @@ $(document).ready(function() {
             url: '/mosbudRead',
             type: 'GET',
             success: function(response) {
-                //alert(JSON.stringify(response))
                 $('#dataLabel').text(response[0]);
             },
             error: function(error) {
@@ -39,9 +36,9 @@ $(document).ready(function() {
         });
     }
 
-    // เรียก updateLabel ทุกๆ 0.5 วินาที (500 มิลลิวินาที)
+    // timer update ทุกๆ 0.5 วินาที (500 มิลลิวินาที)
     setInterval(updateLabel, 500);
 
-    // เรียก updateLabel ทันทีเมื่อโหลดหน้าเว็บ
+    // เรียกฟังก์ชันทันทีเมื่อโหลดหน้าเว็บ
     updateLabel();
 });
