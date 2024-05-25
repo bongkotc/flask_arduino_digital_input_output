@@ -1,5 +1,9 @@
 # Flask Arduino Digital Input/Output
-<p>รันเว็บด้วยชื่อ app.py</p>
+
+| รันเว็บด้วยชื่อ app.py |
+|----------|
+| python -u app.py |
+
 <img src="images/flask_web.png" alt="My Image" width="500" height="300">
 
 #อุปกรณ์
